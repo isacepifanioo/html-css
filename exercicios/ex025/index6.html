@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Exemplo de formulario</h1>
+    <form action="" method="get">
+        <p>
+            <label for="ies">Estado</label>
+            <select name="es" id="ies">
+                <optgroup label="Sul">
+                    <option value="sp">São paulo</option>
+                    <option value="rj">Rio de janeiro</option>
+                    <option value="mg">Minas gerais</option>
+                </optgroup>
+
+                <optgroup label="Norte">
+                <option value="ce">Ceara</option>
+                <option value="ma">Maranhão</option>
+                <option value="pi">Piaui</option> 
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="iprof2"> 
+            <datalist id="iprof2">
+                <option value="Prof">Professor</option>
+                <option value="Adm">Admistrador</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Baba">baba</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imen">Mensagem</label> <br>
+            <textarea name="men" id="imen" cols="30" rows="10"></textarea>  
+        </p>
+    </form>
+</body>
+</html>
