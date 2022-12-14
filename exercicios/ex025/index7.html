@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label for="inub">Numero 1</label>
+            <input type="number" name="nub" id="inub" required min="1" max="10" oninput="iso.innerHTML = Number(inub.value) + Number(inu.value)">
+        </p>
+        <p>
+            <label for="inu'">Numero 2</label>
+            <input type="number" name="nu" id="inu" required min="1" max="10" oninput="iso.innerHTML = Number(inub.value) + Number(inu.value)">
+        </p>
+        <p>
+            <label for="iso">Soma</label>
+            <output name="so" id="iso">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Conrfirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
