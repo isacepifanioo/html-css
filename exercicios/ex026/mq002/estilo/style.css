@@ -1,3 +1,17 @@
 @charset "UTF-8";
 
 /* all */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #233eff ;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
