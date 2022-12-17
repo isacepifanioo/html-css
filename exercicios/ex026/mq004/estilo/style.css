@@ -38,8 +38,8 @@ img {
     margin: auto;
 }
 
-img#pc {display: block; }
-img#phone {display: none; }
+img#pc {display: none; }
+img#phone {display: block; }
 img#print {display: none; }
 img#tablet {display: none; }
 img#tv {display: none; }
