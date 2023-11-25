@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /**/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("https://img.freepik.com/vetores-gratis/fundo-azul-de-memphis-com-meios-tons-e-elementos-de-linha_1017-33622.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        main {          
+           text-align: center; 
+            margin: auto;
+            margin-top: 200px;
+        }
+
+        h1 {
+            text-align: center;
+            color: beige;
+            border: 6px 6px solid black;
+            text-shadow: -3px 3px 10px black;
+        }
+
+        #inputs {
+            text-align: center;         
+            margin-top: 25px;
+        }
+
+        #name {
+            margin-bottom: 20px;
+        }
+
+        .input {
+            font-size: 130%;
+            border-top: none;
+            border-right: none;
+            border-left: 1px solid rgba(0, 0, 0, 0.356);
+            border-bottom: 1px solid black;
+            outline: none; /* aqui tira  a borda do input */
+            padding: 8px;
+            background-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        #conteine {
+            font-size: small;
+            margin-right: 175px;
+            
+        }
+       
+        #buttom {
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 10px;
+            margin-left: 200px;
+            transition: 0.5s;
+        }
+
+        #buttom:hover {
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- Formulario de login -->
+    <main>
+        <h1>Login</h1>
+        <div id="inputs">
+            <input type="text" name="name" placeholder="Name" id="name" class="input"><br>
+            <input type="password" name="password" id="password" placeholder="Password"class="input" required> <br>
+        </div>
+        <div id="conteine">
+            <input type="checkbox" name="check" id="check" id="check">
+            <label for="check">Aceita Termo</label>
+        </div> <br>
+        <input type="button" value="Login" id="buttom">
+    </main>
+</body>
+</html>
