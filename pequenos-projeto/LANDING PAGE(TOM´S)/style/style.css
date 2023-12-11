@@ -1,0 +1,382 @@
+ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --color-primary: #ED4D1B;
+    --color-secondary: #FF9A3C;
+    --color-black: black;
+    --color-white: white;
+}
+
+body {
+    background-image: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
+    padding: 0 1rem 0 1rem;
+}
+
+header, .section-hero, .section-cards, footer {
+    border-color: solid var(--color-black);
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    /* padding: 2rem; */
+}
+
+/* Header */
+
+.conteiner-header {
+    border-top: none;
+    padding: 2rem;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header nav a {
+    color: var(--color-black);
+    text-decoration: none;
+    padding: 0.5rem;   
+    font-size: 1.25rem;
+}
+
+header nav a:nth-child(2n-1) {
+    text-align: right;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--color-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    font-weight: 600;
+    max-width: 13rem;
+}
+
+header .btn {
+    display: block;
+    margin: 1rem auto 0;
+}
+
+/* section-hero */
+
+.section-hero{
+    height: 960px;
+    padding-left: 2rem;
+}
+
+.section-hero img{
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.section-hero h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.section-hero h1 .dest {
+    position: relative;
+    display: block;
+}
+
+.section-hero h1 .dest::after {
+    content: ' ';
+    position: absolute;
+    background-image: url("../img/three-dashes.svg");
+    width: 46px;
+    height: 49px;
+    bottom: 1rem;
+}
+
+.dest {
+    color: var(--color-primary);
+}
+
+.section-hero p{
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.section-hero .btn {
+    position: relative;
+}
+
+.section-hero .btn::after {
+    content: ' ';
+    position: absolute;
+    background-image: url("../img/arrow-curve.svg");
+    width: 132px;
+    height: 48px;
+    top: 4rem;
+}
+
+/* section-cards */
+
+#conteiner-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: -9rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+#conteiner-cards .cards {
+    border: 1px solid var(--color-black);
+    background-color: #ED4D1B;
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+}
+
+#conteiner-cards .cards:nth-child(2n) {
+    background-color: var(--color-secondary);
+    align-self: flex-end;
+}
+
+#conteiner-cards .cards .icon {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 2rem 0 0 2rem;
+}
+
+#conteiner-cards .cards strong {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+
+#conteiner-cards .cards p {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+#conteiner-cards a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+} 
+
+.section-cards {
+    padding-bottom: 10rem;
+}
+.section-cards h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.section-cards a {
+    display: block;
+    padding: 0.7rem 0;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+footer img {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 2rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+footer nav a {
+    margin-bottom: 1rem;
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+    padding: 0.7rem;
+    border: 1px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 48rem){
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    .section-hero {
+        height: fit-content;
+        padding-bottom: 18rem;
+    }
+
+    #hero {
+        padding-left: 3rem;
+    }
+
+    .section-hero h1 {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    .section-hero p {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .section-hero .btn {
+        padding: 1rem 2rem;
+    }
+
+    #conteiner-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-cards h2 {
+        font-size: 4rem;
+    }
+
+    #conteiner-cards .cards:nth-child(2n) {
+        background-color: var(--color-secondary);
+        margin-top: 2rem;
+    }
+
+    .section-cards .btn {
+        padding: 1rem 0;
+        max-width: 300px;
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    footer form label {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"] {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    footer form .btn {
+        padding: 1rem 2rem;
+        max-width: 300px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:80rem) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header img, header .btn {
+        margin: 0;
+    }
+
+    header .btn {
+        width: 180px;
+    }
+
+    .section-hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: fit-content;
+        padding-bottom: 15rem;
+    }
+
+    .section-hero h1 {
+        margin-bottom: 3rem;
+    }
+
+    .section-hero img {
+        width: 60%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer div {
+        flex: 2;
+        max-width: 400px;
+        margin-right: 5rem;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+
+    footer form {
+        flex: 3;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    input[type="email"] {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    footer form .btn {
+        font-size: 1rem;
+        padding: 1rem 0;
+        width: 280px;
+    }
+
+    footer form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
+
